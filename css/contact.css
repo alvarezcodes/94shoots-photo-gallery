@@ -1,0 +1,241 @@
+@import "./navbar_styles.css";
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left-side {
+  flex: 1;
+  background: url("../images/IMG_6624.jpg");
+  height: 70%;
+  background-size: cover;
+  background-position: 50% 15%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  min-height: 450px;
+}
+
+.right-side {
+  flex: 1;
+  /* background: rgb(177, 96, 96); */
+  height: 655px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 40px;
+}
+
+.content {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content .hero p {
+  color: rgb(187, 187, 187);
+}
+
+#fname,
+#lname,
+#email,
+#comment,
+#subject {
+  background-color: rgb(247, 244, 244);
+  border: 1px solid rgb(209, 206, 206);
+  padding: 7px;
+}
+
+h5 {
+  color: rgb(156, 156, 156);
+  font-weight: 300;
+  line-height: 0.8;
+}
+
+label[for="fname"],
+label[for="lname"] {
+  font-size: 0.7rem;
+}
+
+label[for="lname"] {
+  padding-left: 162px;
+}
+
+input[type="email"],
+input[name="subject"] {
+  width: 70%;
+}
+
+.btn-submit {
+  padding: 5px 25px;
+  font-size: 0.8rem;
+  color: #fff;
+  background: rgb(46, 45, 45);
+  transition: 0.4s ease-in-out;
+}
+
+.btn-submit:hover {
+  background-color: rgb(247, 244, 244);
+  color: #000;
+}
+
+#status {
+  position: absolute;
+  left: 120px;
+  bottom: 5px;
+  color: rgb(44, 128, 196);
+}
+
+.fa-check-circle {
+  padding-left: 10px;
+  font-size: 20px;
+  color: green;
+}
+
+#error {
+  position: absolute;
+  left: 230px;
+  bottom: 5px;
+  color: rgb(245, 72, 72);
+}
+
+.fa-times {
+  color: red;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* ============= MEDIA QUERIES ============= */
+@media (max-width: 1400px) {
+  input[type="email"],
+  input[name="subject"] {
+    width: 82%;
+  }
+}
+
+@media (max-width: 1200px) {
+  input[type="email"],
+  input[name="subject"] {
+    width: 99%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    top: 40%;
+  }
+
+  .right-side {
+    padding-bottom: 20px;
+  }
+
+  input[type="email"],
+  input[name="subject"] {
+    width: 67%;
+  }
+}
+
+@media (max-width: 770px) {
+  input[type="email"],
+  input[name="subject"] {
+    width: 93%;
+  }
+}
+
+@media (max-width: 525px) {
+  .left-side {
+    top: 35%;
+  }
+
+  input[type="email"],
+  input[name="subject"] {
+    width: 93%;
+  }
+
+  label[for="fname"],
+  label[for="lname"] {
+    /* width: 40%; */
+    /* display: none; */
+  }
+
+  input[name="fname"] {
+    margin-bottom: 30px;
+  }
+
+  label[for="fname"] {
+    position: absolute;
+    top: 26%;
+  }
+  label[for="lname"] {
+    padding-left: 0;
+    position: absolute;
+    top: 37%;
+  }
+
+  input[name="fname"],
+  input[name="lname"] {
+    width: 93%;
+  }
+
+  textarea {
+    width: 93%;
+  }
+}
+
+/* === MOBILE== */
+@media (max-width: 375px) {
+  .left-side {
+    width: 80%;
+    left: 42px;
+    top: 26%;
+  }
+
+  .right-side {
+    flex: 1;
+    height: 655px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    padding-left: 40px;
+  }
+
+  .content {
+    padding-bottom: 20px;
+  }
+
+  label[for="fname"],
+  label[for="lname"] {
+    width: 92%;
+  }
+
+  label[for="fname"] {
+    margin-bottom: 5px;
+  }
+
+  /* text area */
+  input[for="comment"] {
+    width: 93%;
+  }
+
+  form {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 325px) {
+  label[for="fname"] {
+    top: 28%;
+  }
+  label[for="lname"] {
+    padding-left: 0;
+    position: absolute;
+    top: 39%;
+  }
+}

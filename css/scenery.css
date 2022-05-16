@@ -1,0 +1,48 @@
+@import "./navbar_styles.css";
+
+/* ============================== */
+.masonry {
+  columns: 4;
+  column-gap: 16px;
+}
+
+.masonry .grid-images {
+  display: inline-block;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.masonry .grid-images img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  filter: grayscale(0%);
+}
+
+.masonry .grid-images img:hover {
+  -webkit-filter: grayscale(50%);
+  -moz-filter: grayscale(50%);
+  filter: grayscale(70%);
+}
+
+/* -------- MEDIA QUERIES -------- */
+@media (max-width: 1280px) {
+  .masonry {
+    columns: 3;
+    column-gap: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    columns: 2;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry {
+    columns: 1;
+    column-gap: 10px;
+  }
+}

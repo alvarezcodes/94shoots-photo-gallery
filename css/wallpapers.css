@@ -1,0 +1,38 @@
+@import "./navbar_styles.css";
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title h1 {
+  font-size: 5rem;
+}
+
+/* ======================== */
+
+@media (max-width: 700px) {
+  .title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 260px) {
+  .title h1 {
+    font-size: 1rem;
+  }
+}
